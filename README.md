@@ -26,7 +26,6 @@ heart-disease-predictor/
 ├── heart_disease_app.py
 ├── heart_disease_model.pkl
 ├── scaler.pkl
-├── requirements.txt=
 └── README.md
 ```
 
@@ -35,31 +34,47 @@ Follow these steps to get the project running on your local machine:
 
 ### 1. Prerequisites
 Ensure you have Python 3.9+ installed. You can check your version by running:
-```text
+```bash
 python --version
 ```
 ### 3. Clone the Repository
-```text
-git clone [https://github.com/your-username/heart-disease-predictor.git](https://github.com/your-username/heart-disease-predictor.git)
+```bash
+git clone https://github.com/your-username/heart-disease-predictor.git
 cd heart-disease-predictor
 ```
 ### 4. Create a Virtual Environment
-```text
+```bash
 python -m venv venv
 ```
 #### Activate it
 On Windows:
-```text
+```bash
 venv\Scripts\activate
 ```
 On macOS/Linux:
-```text
+```bash
 source venv/bin/activate
 ```
 ### 5. Install Dependencies
+```bash
+- Python 3.9+
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
+```
 ### 6. Run the Application
 Launch the Streamlit server:
-```text
+```bash
 streamlit run heart_disease_app.py
 ```
 The app will be available at http://localhost:8501 in your browser.
+
+## 🎯 Key Features
+
+- Real-time prediction of heart disease risk
+- Clean interactive UI with Streamlit
+- Scalable ML pipeline
+- Model comparison (Random Forest vs Logistic Regression)
+- Preprocessing with saved scaler
